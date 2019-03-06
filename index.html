@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Madwic Technologies</title>
+    <link rel="stylesheet" href="http://use.fontawesome.com/releases/v5.7.2/css/all.css"
+     integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/sprite_30fps.css">
+    <link rel="stylesheet" href="css/styles.css">
+    
+    <title>Madwic</title>
+</head>
+
+<body>
+    <!-- navbar section -->
+
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top" id="main-nav">
+        <div class="container">
+            <a href="#" class="navbar-brand">
+                <img src="img/logo.png" alt="" class="" style="height:40px; width:75px">
+                <h3 class="d-inline align-middle pl-2">Madwic Technologies</h3>
+            </a>
+
+            <a href="#" class="navbar-toggler" data-toggle="collapse" data-target="#mainNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </a>
+
+            <div class="collapse navbar-collapse" id="mainNavbar">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a href="#mainSection" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="#aboutUsSection" class="nav-link">About Us</a></li>
+                    <li class="nav-item"><a href="#aboutAuthors" class="nav-link">Services</a></li>
+                    <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+
+    <!-- Main-section -->
+    <header id="homepage-section" class="">
+       <div class="dark-overlay">
+           <div class="container py-4">
+            <div class="row">
+                <div class="col-md-6 text-left p-4">
+                        <h1 class="display-2 heading">Design</h1>
+                        <h1 class="display-2 heading">Develop</h1>
+                        <h1 class="display-2 heading">Innovate</h1>
+                        <p class="lead">We are the right technology partner to drive
+                                digitization to your business.</p>
+                        <button class="btn btn-outline-light btn-lg">Contact Us</button>
+                </div>
+
+                <div class="col-md-6 d-none d-lg-block">
+                        <div class="">
+                            <div class="shapeshifter play iphone-animation" style="background-image: url(sprite_30fps.svg)"></div>
+                        </div>
+
+                </div>
+            </div>
+           
+           </div>
+       </div>
+    </header>
+
+
+
+    <section id="aboutUs-section" class="py-4 text-light">
+        <div class="container">
+            <div class="row">
+                <div class="col text-center">
+                    <h1 class="display-3">About Us</h1>
+                    <p class="lead">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. </p>
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="" class="py-4 text-light bg-primary">
+            <div class="container">
+                <div class="row">
+                    <div class="col text-center">
+                        <h1 class="display-3">Services</h1>
+                        <p class="lead">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. </p>
+    
+                    </div>
+                </div>
+            </div>
+    
+        </section>
+
+
+
+       
+
+
+   
+
+    <!-- BOOTSTRAP SCRIPTS -->
+
+    <!-- JQUERY -->
+    <script src="https://code.jquery.com/jquery-3.3.1.js"
+         integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+         crossorigin="anonymous"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="http://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+        <script src="libs/anime/lib/anime.min.js"></script>
+        <script src="jsFiles/animation.js"></script>
+    <script>
+        $('body').scrollspy({target: '#main-nav'});
+        //getting current year for copyright
+        $('#year').text(new Date().getFullYear());
+
+        
+    </script>
+</body>
+
+</html>
