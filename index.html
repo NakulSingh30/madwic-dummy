@@ -8,7 +8,8 @@
     <title>Madwic Technologies</title>
     <link rel="stylesheet" href="http://use.fontawesome.com/releases/v5.7.2/css/all.css"
      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/bootstrap.css">
+     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/sprite_30fps.css">
     <link rel="stylesheet" href="css/styles.css">
     
@@ -18,7 +19,7 @@
 <body>
     <!-- navbar section -->
 
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top" id="main-nav">
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top nav-bg" id="main-nav">
         <div class="container">
             <a href="#" class="navbar-brand">
                 <img src="img/logo.png" alt="" class="" style="height:40px; width:75px">
@@ -47,18 +48,18 @@
        <div class="dark-overlay">
            <div class="container py-4">
             <div class="row">
-                <div class="col-md-6 text-left p-4">
+                <div class="col-lg-6 text-left p-4">
                         <h1 class="display-2 heading">Design</h1>
                         <h1 class="display-2 heading">Develop</h1>
                         <h1 class="display-2 heading">Innovate</h1>
                         <p class="lead">We are the right technology partner to drive
-                                digitization to your business.</p>
+                                digitization to  your business.</p>
                         <button class="btn btn-outline-light btn-lg">Contact Us</button>
                 </div>
 
-                <div class="col-md-6 d-none d-lg-block">
+                <div class="col-lg-6 d-none d-lg-block">
                         <div class="">
-                            <div class="shapeshifter play iphone-animation" style="background-image: url(sprite_30fps.svg)"></div>
+                            <div class="shapeshifter iphone-animation" style="background-image: url(sprite_30fps.svg)"></div>
                         </div>
 
                 </div>
@@ -70,12 +71,15 @@
 
 
 
+
+
+<!-- ABOUT SECTION -->
     <section id="aboutUs-section" class="py-4 text-light">
         <div class="container">
             <div class="row">
                 <div class="col text-center">
-                    <h1 class="display-3">About Us</h1>
-                    <p class="lead">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. </p>
+                    <h1 class="display-3 aboutUs-heading" data-aos="fade-right">About Us</h1>
+                    <p class="lead" data-aos="fade-up" data-aos-delay="200">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc,Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. </p>
 
                 </div>
             </div>
@@ -83,18 +87,60 @@
 
     </section>
 
-    <section id="" class="py-4 text-light bg-primary">
-            <div class="container">
-                <div class="row">
-                    <div class="col text-center">
-                        <h1 class="display-3">Services</h1>
-                        <p class="lead">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. </p>
+ 
     
+<!-- SERVICES SECTION -->
+<section id="services-section" class="py-4 text-light">
+    <div class="container">
+        <h1 class="services-heading display-3 mb-2 text-center">Our Offerings</h1>
+        <p class="lead text-center p-4">We are the iOS app development partner of choice managing the entire iOS lifecycle right from designing to maintenance.</p>
+        <div class="row">
+
+            <div class="col-md-4">
+                <div class="card draw text-center bg-transparent p-4">
+                    <div class="logo-container ">
+                        <i class="fab fa-apple fa-5x logo apple"></i>
                     </div>
+
+                   <div class="card-body">
+                    <h3 class="card-title">iOS Application Consulting</h3>
+                    <p class="card-text text-center">Our team helps you carry out competitive and feasibility analysis and determine a software development approach that can be used to develop iOS apps. </p>
+                   </div>
                 </div>
             </div>
-    
-        </section>
+
+
+            <div class="col-md-4">
+                <div class="card draw text-center bg-transparent p-4">
+                    <div class="logo-container ">
+                        <i class="fas fa-mobile fa-5x logo mobile"></i>
+                    </div>
+
+                   <div class="card-body">
+                    <h3 class="card-title">iOS Application Design</h3>
+                    <p class="card-text text-center">Our UX design team follows an agile process to develop a visually pleasing prototype; interactive, user-friendly, and intuitive app interfaces; and custom POCs for your applications. </p>
+                   </div>
+                </div>
+            </div>
+
+
+            <div class="col-md-4">
+                <div class="card draw text-center bg-transparent p-4">
+                    <div class="logo-container ">
+                        <i class="fas fa-cogs fa-4x logo cog"></i>
+                    </div>
+
+                   <div class="card-body">
+                    <h3 class="card-title">iOS Application Support, Maintenance, and Optimization</h3>
+                    <p class="card-text text-center">Our team helps you carry out competitive and feasibility analysis and determine a software development approach that can be used to develop iOS apps. </p>
+                   </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</section>
 
 
 
@@ -112,10 +158,18 @@
     <script src="http://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
         integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
         crossorigin="anonymous"></script>
-    <script src="http://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    
+        <script src="http://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
+        
+        <!-- AOS ANIMATE ON SCROLL -->
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        
+        <!-- ANIME JS -->
         <script src="libs/anime/lib/anime.min.js"></script>
+        
+        <!-- CUSTOM -->
         <script src="jsFiles/animation.js"></script>
     <script>
         $('body').scrollspy({target: '#main-nav'});

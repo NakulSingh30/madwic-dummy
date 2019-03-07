@@ -9,16 +9,81 @@
   background-size: cover; }
   #homepage-section .container {
     margin-top: 105px; }
-  #homepage-section .heading {
-    font-weight: 200;
-    text-transform: uppercase;
-    letter-spacing: 0.1em; }
-  #homepage-section .heading .letter {
-    display: inline-block;
-    line-height: 1em; }
 
 #aboutUs-section {
   background-color: #333; }
+
+#services-section {
+  background-color: #171717; }
+  #services-section .card {
+    background: none;
+    border: 0;
+    box-sizing: border-box;
+    margin: 1em;
+    padding: 1em 2em;
+    min-height: 480px;
+    box-shadow: inset 0 0 0 2px #6c757d;
+    color: #6c757d;
+    position: relative;
+    vertical-align: middle; }
+    #services-section .card::before, #services-section .card::after {
+      box-sizing: inherit;
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 100%; }
+  #services-section .draw {
+    transition: color 0.25s; }
+    #services-section .draw::before, #services-section .draw::after {
+      border: 2px solid transparent;
+      width: 0;
+      height: 0; }
+    #services-section .draw::before {
+      top: 0;
+      left: 0; }
+    #services-section .draw::after {
+      bottom: 0;
+      right: 0; }
+    #services-section .draw:hover {
+      color: #ae312d; }
+      #services-section .draw:hover .logo-container {
+        border-color: #ae312d; }
+        #services-section .draw:hover .logo-container .logo {
+          color: #ae312d; }
+      #services-section .draw:hover .card-text {
+        transition: color 0.25s;
+        color: #adb5bd; }
+    #services-section .draw:hover::before, #services-section .draw:hover::after {
+      width: 100%;
+      height: 100%; }
+    #services-section .draw:hover::before {
+      border-top-color: #ae312d;
+      border-right-color: #ae312d;
+      transition: width 0.25s ease-out, height 0.25s ease-out 0.25s; }
+    #services-section .draw:hover::after {
+      border-bottom-color: #ae312d;
+      border-left-color: #ae312d;
+      transition: border-color 0s ease-out 0.5s, width 0.25s ease-out 0.5s, height 0.25s ease-out 0.75s; }
+  #services-section .logo-container {
+    border: 2px solid #6c757d;
+    height: 110px;
+    width: 110px;
+    border-radius: 100%;
+    align-self: center; }
+    #services-section .logo-container .logo {
+      color: #6c757d;
+      align-self: center; }
+    #services-section .logo-container .apple {
+      padding-top: 9px; }
+    #services-section .logo-container .mobile {
+      padding-top: 12px; }
+    #services-section .logo-container .cog {
+      padding-top: 17px; }
+    #services-section .logo-container .card-text {
+      color: #6c757d; }
+    #services-section .logo-container .card-text, #services-section .logo-container .logo, #services-section .logo-container .logo-container {
+      transition-duration: 500ms;
+      color: #6c757d; }
 
 .navbar {
   border-bottom: 4px solid #ae312d;
@@ -28,7 +93,19 @@
     font-size: 1.4rem;
     padding-right: 1.4rem; }
 
+.nav-bg {
+  background-color: black; }
+
 .dark-overlay {
   background-color: rgba(0, 0, 0, 0.5);
   height: 100%;
   width: 100%; }
+
+.heading, .aboutUs-heading, .services-heading {
+  font-weight: 200;
+  text-transform: uppercase;
+  letter-spacing: 0.1em; }
+
+.heading .letter, .aboutUs-heading .letter, .services-heading .letter {
+  display: inline-block;
+  line-height: 1em; }
