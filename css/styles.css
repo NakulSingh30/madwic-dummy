@@ -9,6 +9,8 @@
   background-size: cover; }
   #homepage-section .container {
     margin-top: 105px; }
+  #homepage-section .iphone-animation {
+    margin-left: auto; }
 
 #aboutUs-section {
   background-color: #333; }
@@ -21,7 +23,6 @@
     box-sizing: border-box;
     margin: 1em;
     padding: 1em 2em;
-    min-height: 480px;
     box-shadow: inset 0 0 0 2px #6c757d;
     color: #6c757d;
     position: relative;
@@ -109,3 +110,33 @@
 .heading .letter, .aboutUs-heading .letter, .services-heading .letter {
   display: inline-block;
   line-height: 1em; }
+
+[data-aos="card-text-aos"] {
+  color: #333;
+  transition-property: color;
+  transition-delay: 700ms; }
+  [data-aos="card-text-aos"].aos-animate {
+    color: #adb5bd; }
+
+[data-aos="danger-color-aos"] {
+  color: #333;
+  transition-property: color;
+  transition-delay: 600ms; }
+  [data-aos="danger-color-aos"].aos-animate {
+    color: #ae312d; }
+
+[data-aos="card-border-animation"] {
+  transition-duration: 1000ms;
+  transition-property: width, height, border-top-color, border-right-color,  border-bottom-color, border-left-color; }
+  [data-aos="card-border-animation"].aos-animate ::before,
+  [data-aos="card-border-animation"].aos-animate ::after {
+    width: 100%;
+    height: 100%; }
+  [data-aos="card-border-animation"].aos-animate ::before {
+    border-top-color: #ae312d;
+    border-right-color: #ae312d;
+    transition: width 0.25s ease-out, height 0.25s ease-out 0.25s; }
+  [data-aos="card-border-animation"].aos-animate ::after {
+    border-bottom-color: #ae312d;
+    border-left-color: #ae312d;
+    transition: border-color 0s ease-out 0.5s, width 0.25s ease-out 0.5s, height 0.25s ease-out 0.75s; }

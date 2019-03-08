@@ -1,10 +1,14 @@
-// Wrap every letter in a span
 
 $(document).ready(function(){
   AOS.init();
 
+
+  // playing iphone animation
   $('.iphone-animation').addClass("play");
 
+
+
+  // homepage h1 text custom animation
    inputString = '.heading'
    animateText(inputString);
 
@@ -16,6 +20,7 @@ $(document).ready(function(){
 
 
 function animateText(inputString){
+// Wrap every letter in a span
 
   $(inputString).each(function(){
     $(this).html($(this).text().replace(/([^\x00-\x80]|\w)/g, "<span class='letter'>$&</span>"));
