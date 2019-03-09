@@ -1,6 +1,5 @@
 body {
-  margin-top: 105px;
-  width: 100%; }
+  margin-top: 105px; }
 
 #homepage-section {
   color: white;
@@ -145,7 +144,6 @@ body {
       font-size: 1em; }
 
   body {
-    width: 100%;
     margin-top: 75px; }
 
   .heading {
