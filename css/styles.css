@@ -130,7 +130,7 @@ body {
   display: inline-block;
   line-height: 1em; }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 550px) {
   .navbar {
     padding: 1em 0em;
     padding-left: .5em; }
