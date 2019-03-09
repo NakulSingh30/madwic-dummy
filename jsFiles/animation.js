@@ -12,10 +12,21 @@ $(document).ready(function(){
    inputString = '.heading'
    animateText(inputString);
 
-
+// aos callbacks
+document.addEventListener('aos:in:services-h1', ({ detail }) => {
+  console.log('animated in', detail);
+});
 
 
 });
+
+
+
+
+
+
+
+
 
 
 
