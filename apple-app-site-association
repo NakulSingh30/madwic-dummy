@@ -1,0 +1,64 @@
+{
+    "applinks": {
+        "apps": [],
+        "details": [
+            {
+                "appID": "JW6Z98G3US.com.coulomb.ChargePoint",
+                "components": [
+                    {
+                        "/": "*",
+                        "?": "web_only=1",
+                        "exclude": true
+                    },
+                    {
+                        "/": "/home*"
+                    },
+                    {
+                        "/": "/anonymous/*"
+                    },
+                    {
+                        "/": "/driver/*"
+                    },
+                    {
+                        "/": "/connections/*"
+                    },
+                    {
+                        "/": "/charge*"
+                    },
+                    {
+                        "/": "/signup*"
+                    },
+                    {
+                        "/": "/charge_point*"
+                    },
+                    {
+                        "/": "/df/*"
+                    },
+                    {
+                        "/": "/d/*"
+                    },
+                    {
+                        "/": "/p/*"
+                    },
+                    {
+                        "/": "/pair/*"
+                    },
+                    {
+                        "/": "/mobile_app/team*"
+                    },
+                    {
+                        "/": "/r/driver/device-pair"
+                    }
+                ],
+                "paths": [
+                    "/*"
+                ]
+            }
+        ]
+    },
+    "appclips": {
+        "apps": [
+            "JW6Z98G3US.com.coulomb.ChargePoint.Clip"
+        ]
+    }
+}
